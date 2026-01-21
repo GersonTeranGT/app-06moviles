@@ -6,7 +6,7 @@ import { onValue, ref } from 'firebase/database';
 
 export default function PerfilScreen() {
 
-    const [datos, setDatos] = useState({})
+    const [datos, setDatos] = useState({nombre: "", correo:"", edad:""})
 
     useEffect(() => {
         leerUsuario()
